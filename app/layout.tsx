@@ -1,6 +1,5 @@
 'use client';
 
-import { Analytics } from "@vercel/analytics/next"
 import './globals.css';
 import { Hanken_Grotesk } from 'next/font/google';
 
