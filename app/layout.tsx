@@ -2,11 +2,20 @@
 
 import { Analytics } from "@vercel/analytics/next"
 import './globals.css';
+import { Hanken_Grotesk } from 'next/font/google';
+
 import Header from './components/Navigation';
 import Footer from './components/Footer';
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import { usePathname } from 'next/navigation';
+
+const hankenGrotesk = Hanken_Grotesk({
+  weight: ['400', '500', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-hanken-grotesk',
+});
 
 export default function RootLayout({
   children,
@@ -41,7 +50,7 @@ export default function RootLayout({
 
 
   return (
-    <html lang="en">
+    <html lang="en" className={hankenGrotesk.variable}>
       <head>
         <link rel="icon" href="/header.png" type="image/png" />
         <link rel="shortcut icon" href="/header.png" type="image/png" />
