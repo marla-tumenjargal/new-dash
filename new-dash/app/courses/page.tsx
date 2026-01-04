@@ -28,6 +28,7 @@ export default function Courses() {
               <ul>
                 <li><strong>cs70</strong>: discrete math & probability theory</li>
                 <li><strong>cs61b</strong>: data structures </li>
+                <li><strong>data c8</strong>: foundations of data science</li>
                 <li><strong>anthro 2ac</strong>: intro to archaeology</li>
               </ul>
 
@@ -35,7 +36,7 @@ export default function Courses() {
               <ul>
                 <li><strong>cs61a</strong>: structure and interpretation of computer programs</li>
                 <li><strong>math 54</strong>: linear algebra & differential equations </li>
-                <li><strong>data 94</strong>: computational thinking & social dynamics (A)</li>
+                <li><strong>data 94</strong>: computational thinking & social dynamics</li>
                 <li><strong>comparative literature r1b</strong>: surrealism, thresholds, windows</li>
               </ul>
 

@@ -47,30 +47,41 @@ export default function HomePage() {
         <p className="hero-name">Marla Tumenjargal</p>
 
         <p>
-          helloo i'm marla, a first-year studying computer science @ UC Berkeley 🧸. i enjoy building playful software, creative writing, & all-things ux design. feel free to explore my lil corner of the internet! <a href=""></a>
+          helloo i'm marla. i currently study computer science @ @ UC Berkeley 🧸. i enjoy building playful software, creative writing, & all-things ux design. feel free to explore my lil corner of the internet! <a href=""></a>
         </p>
-        
+      
         <div>
-          <p><strong>a bit about me:</strong></p>
+          <p><strong>what i'm up to:</strong></p>
           <ul className="list-disc list-inside space-y-1 ml-0">
           
-            <li>
-            og from salt lake city, utah, but currently in the bay area!
-            </li>
-            <li>i hope to eventually apply CS to interdiscplinary fields (computer vision + social biases?)</li>
-          </ul>
-        </div>
+            <li>taking <a
+    href="/courses"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline hover:no-underline"
+  >
+    these
+  </a>{" "}
+  courses :D
+</li>
+  
 
-        <div>
-          <p><strong>what i've been + am up to:</strong></p>
-          <ul className="list-disc list-inside space-y-1 ml-0">
-          
+
             <li>
             building with creative ml & ai @ <a href="https://www.callaunchpad.org/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">
                 launchpad
               </a> 
             </li>
-            <li>
+            
+            
+          </ul>
+        </div>
+
+        <div>
+        <p><strong>previously:</strong></p>
+        <ul className="list-disc list-inside space-y-1 ml-0">
+
+        <li>
               <a href="https://educationusa.state.gov/centers/educationusa-mongolia" target="_blank" rel="noopener noreferrer" className="hover-underline-link">
                 prev @ U.S. Embassy in Mongolia &nbsp;<ArrowUpRight className="email-arrow" />
               </a>
@@ -95,10 +106,10 @@ export default function HomePage() {
                 scaling AI/CS education for 3k+ girls @ stembridgeinc&nbsp;<ArrowUpRight className="email-arrow" />
               </a>
             </li>
-            
-          </ul>
-        </div>
+        </ul>
+        
 
+        </div>
         <p className="text-xs font-light tracking-wide text-gray-500 mb-2">
           ⟢ my tech stack includes React, Node.js, Swift, Java, MongoDB, Python
         </p>
