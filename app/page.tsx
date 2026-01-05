@@ -48,8 +48,8 @@ export default function HomePage() {
         <p className="hero-name">Marla Tumenjargal</p>
 
         <p>
-          hello hello i'm marla, i currently study computer science @ UC Berkeley! 🧸 i'm passionate about interdisciplinary work in machine learning, software, and ux design. 
-          talk [cupstacking, sodukus, philosophy/ai/society, pinterest-ing, etc] with me <a href=""></a>
+          hello hello i'm marla, i currently study computer science @ UC Berkeley 🧸!  i'm interested in computer vision +  machine learning in interdisciplinary fields, playful software, and ux design. 
+          talk [cupstacking, philosophy/ai/society, puzzles, pinterest-ing, etc] with me! <a href=""></a>
         </p>
       
         <div>
@@ -57,21 +57,27 @@ export default function HomePage() {
           <ul className="list-disc list-inside space-y-1 ml-0">
           
             <li>taking <a
-    href="/courses"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="underline hover:no-underline"
-  >
-    these
-  </a>{" "}
-  courses :D
-</li>
+                href="/courses"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:no-underline"
+              >
+                these
+              </a>{" "}
+              courses :D
+            </li>
   
 
 
             <li>
             building with creative ml & ai @ <a href="https://www.callaunchpad.org/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">
                 launchpad
+              </a> 
+            </li>
+
+            <li>
+            jotting my thoughts <a href="/writing" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">
+                here
               </a> 
             </li>
             
@@ -117,7 +123,7 @@ export default function HomePage() {
         </p>
       </div>
 
-      <section className="hero-container mt-10 pl-6">
+      {/* <section className="hero-container mt-10 pl-6">
         <div className="hero-row">
           <p>✿ </p>
           <p>&nbsp; view my work ↓</p>
@@ -136,12 +142,12 @@ export default function HomePage() {
             </div>
 
             <div className="hero-image-wrapper" onClick={handleWritingClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              <img src="/writingfolder.png" alt="writing folder" className="hero-sample-image original-image" />
-              <img src="/activewritingfolder.png" alt="active writing folder" className="hero-sample-image active-image" />
+              <img src="/projectsfolder.png" alt="projects folder" className="hero-sample-image original-image" />
+              <img src="/activeprojectsfolder.png" alt="active projects folder" className="hero-sample-image active-image" />
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

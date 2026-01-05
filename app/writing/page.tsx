@@ -17,9 +17,17 @@ export default function WritingPage() {
   const [expandedArticle, setExpandedArticle] = useState<Article | null>(null);
 
   const articles: Article[] = [
-
     { 
       id: 1, 
+      title: "on creativity", 
+      author: "design", 
+      blocks: "1/4/2026", 
+      images: ['/green.jpg'], 
+      content: `although i don't strongly consider myself a traditionally creative person (such as within the fine arts and music), i do believe that the
+ability to think critically and introspectively runs far beyond silicon valley's insistence on speed, efficiency, and optimization. one such thought involves integrating creativity into computer science. and no, not in a "how can i solve this algorithm to achieve the most efficiency" or "how can i maximize cpu usage here" ways but rather in a "how can i use computer science as a tool to express design creatively?" so my thoughts on creativity are really just about expression. by no means does this mean that we should only focus on creativity when we design because it is equally important we pay attention to user needs. anyway, circling back, my thoughts on creativity are really about expression + balance.  '`
+    },
+    { 
+      id: 2, 
       title: "is the turing test an appropriate measure of machine intelligence?", 
       author: "technology", 
       blocks: "11/28/2025", 
@@ -93,7 +101,7 @@ the more i continue to create and learn from others, the more i realize how much
     },
     {
       id: 6,
-      title: "thoughts, in no particular order",
+      title: "introductory thoughts",
       author: "society",
       blocks: "7/15/2025",
       images: ['/rnb2.jpg'],

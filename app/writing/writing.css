@@ -6,7 +6,7 @@
 .writing-page {
   max-width: 80vw;       /* about 98% of viewport width */
   width: 80vw;           /* same as max-width for consistency */
-  padding-left: 3rem;    /* left padding for breathing room */
+  padding-left: 5rem;    /* left padding for breathing room */
   padding-right: 1rem;   /* smaller right padding, since width is less than full */
   margin: 2rem auto 0;   /* center horizontally */
   box-sizing: border-box;

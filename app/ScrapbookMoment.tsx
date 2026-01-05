@@ -11,25 +11,18 @@ const ScrapbookMoment: React.FC<ScrapbookMomentProps> = ({ onComplete }) => {
   const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
-    // Show signature immediately
     const signatureTimer = setTimeout(() => {
       setShowSignature(true);
-      
-      // Start fade out after signature shows
       const fadeTimer = setTimeout(() => {
         setIsComplete(true);
-        
-        // Trigger navigation to appear
         window.dispatchEvent(new CustomEvent('scrapbook-complete'));
-        
-        // Complete after fade out finishes
         const completeTimer = setTimeout(() => {
           onComplete?.();
-        }, 100); // Wait for fade transition to complete
+        }, 100); 
         return () => clearTimeout(completeTimer);
-      }, 1100); // Signature display duration - 0.8 seconds
+      }, 1100); 
       return () => clearTimeout(fadeTimer);
-    }, 100); // Small delay before showing signature
+    }, 100); 
 
     return () => clearTimeout(signatureTimer);
   }, [onComplete]);
@@ -43,7 +36,6 @@ const ScrapbookMoment: React.FC<ScrapbookMomentProps> = ({ onComplete }) => {
         backgroundColor: '#fafaf9'
       }}
     >
-      {/* Logo/signature in center */}
       <div 
         className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 ease-in-out flex items-center gap-4 ${
           showSignature ? 'opacity-100' : 'opacity-0'

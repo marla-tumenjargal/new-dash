@@ -3,10 +3,10 @@
 import './globals.css';
 import { Hanken_Grotesk } from 'next/font/google';
 
-import Header from './components/Navigation';
-import Footer from './components/Footer';
+import Header from './Navigation';
+import Footer from './footer/page';
+import HeroFolders from './HeroFolders';
 import { useState, useEffect } from 'react';
-import Head from 'next/head';
 import { usePathname } from 'next/navigation';
 
 const hankenGrotesk = Hanken_Grotesk({
@@ -23,6 +23,8 @@ export default function RootLayout({
 }) {
   const [showNavigation, setShowNavigation] = useState(false);
   const [isFullWindow, setIsFullWindow] = useState(true);
+  const [isHovering, setIsHovering] = useState(false);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const pathname = usePathname();
 
   useEffect(() => {
@@ -35,18 +37,28 @@ export default function RootLayout({
       setIsFullWindow(window.innerWidth >= 1440);
     };
 
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePos({ x: e.clientX, y: e.clientY });
+    };
+
     checkFullWindow();
     window.addEventListener('resize', checkFullWindow);
+    window.addEventListener('mousemove', handleMouseMove);
 
     return () => {
       window.removeEventListener('scrapbook-complete', handleScrapbookComplete);
       window.removeEventListener('resize', checkFullWindow);
+      window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
 
   const isWhiteBackgroundPage =
     pathname?.startsWith('/projects') || pathname?.startsWith('/writing') || pathname?.startsWith('/courses');
 
+  const isHomePage = pathname === '/';
+
+  const handleMouseEnter = () => setIsHovering(true);
+  const handleMouseLeave = () => setIsHovering(false);
 
   return (
     <html lang="en" className={hankenGrotesk.variable}>
@@ -60,6 +72,15 @@ export default function RootLayout({
           isWhiteBackgroundPage ? '!bg-white !text-black' : ''
         }`}
       >
+        {isHovering && isHomePage && (
+          <div
+            className="custom-cursor"
+            style={{ left: mousePos.x + 10, top: mousePos.y - 10 }}
+          >
+            view &gt;
+          </div>
+        )}
+
         {showNavigation && isFullWindow && (
           <div className="fixed top-0 bottom-0 left-[calc(4vw+theme(spacing.1)+var(--nav-width,150px))] w-px bg-gray-300 z-10" />
         )}
@@ -75,6 +96,15 @@ export default function RootLayout({
             {children}
           </main>
         </div>
+
+        {showNavigation && isHomePage && (
+          <div className="w-full pl-[14vw]">
+            <HeroFolders 
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            />
+          </div>
+        )}
 
         {showNavigation && <div className="pt-8"><Footer /></div>}
       </body>
