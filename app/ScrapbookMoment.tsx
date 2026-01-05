@@ -43,32 +43,6 @@ const ScrapbookMoment: React.FC<ScrapbookMomentProps> = ({ onComplete }) => {
         backgroundColor: '#fafaf9'
       }}
     >
-      {/* Left stars */}
-      <div 
-        className={`absolute left-8 top-1/2 transform -translate-y-1/2 transition-opacity duration-500 ease-in-out ${
-          showSignature ? 'opacity-100' : 'opacity-0'
-        }`}
-        style={{ zIndex: 99 }}
-      >
-      </div>
-
-      {/* Right stars (flipped diagonally) */}
-      <div 
-        className={`absolute right-8 top-1/2 transform -translate-y-1/2 transition-opacity duration-500 ease-in-out ${
-          showSignature ? 'opacity-100' : 'opacity-0'
-        }`}
-        style={{ zIndex: 99 }}
-      >
-        <Image
-          src="/stars.png"
-          alt="Stars Right"
-          width={120}
-          height={120}
-          className="object-contain scale-x-[-1] scale-y-[-1]"
-          priority
-        />
-      </div>
-
       {/* Logo/signature in center */}
       <div 
         className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 ease-in-out flex items-center gap-4 ${

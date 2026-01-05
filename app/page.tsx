@@ -20,6 +20,7 @@ export default function HomePage() {
 
   const handleProjectsClick = useCallback(() => window.location.href = '/projects', []);
   const handleWritingClick = useCallback(() => window.location.href = '/writing', []);
+  const handleCoursesClick = useCallback(() => window.location.href = '/courses', []);
   const handleMouseEnter = () => setIsHovering(true);
   const handleMouseLeave = () => setIsHovering(false);
 
@@ -47,7 +48,8 @@ export default function HomePage() {
         <p className="hero-name">Marla Tumenjargal</p>
 
         <p>
-          helloo i'm marla. i currently study computer science @ UC Berkeley 🧸. i enjoy building playful software, creative writing, & all-things ux design. feel free to explore around! <a href=""></a>
+          hello hello i'm marla, i currently study computer science @ UC Berkeley! 🧸 i'm passionate about interdisciplinary work in machine learning, software, and ux design. 
+          talk [cupstacking, sodukus, philosophy/ai/society, pinterest-ing, etc] with me <a href=""></a>
         </p>
       
         <div>
@@ -123,10 +125,16 @@ export default function HomePage() {
 
         <div className="hero-section">
           <div className="hero-images-container">
+            <div className="hero-image-wrapper" onClick={handleCoursesClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+              <img src="/coursework.png" alt="writing folder" className="hero-sample-image original-image" />
+              <img src="/activecoursework.png" alt="active writing folder" className="hero-sample-image active-image" />
+            </div>
+
             <div className="hero-image-wrapper" onClick={handleProjectsClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               <img src="/projectsfolder.png" alt="projects folder" className="hero-sample-image original-image" />
               <img src="/activeprojectsfolder.png" alt="active projects folder" className="hero-sample-image active-image" />
             </div>
+
             <div className="hero-image-wrapper" onClick={handleWritingClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               <img src="/writingfolder.png" alt="writing folder" className="hero-sample-image original-image" />
               <img src="/activewritingfolder.png" alt="active writing folder" className="hero-sample-image active-image" />

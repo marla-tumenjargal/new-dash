@@ -10,16 +10,16 @@ export default function Footer() {
                     <div className="footer-inner">
                         {/* Left Section - Copyright */}
                         <div className="footer-left">
-                            2025 - Marla Tumenjargal
+                         talk [cupstacking, sodukus, philosophy/ai/society, etc] with me →
                         </div>
                         
                         {/* Right Section - Email */}
                         <div className="footer-right">
                             <a 
-                                href="mailto:marlatumenjargal@berkeley.edu" 
+                                href="marlatumenjargal@berkeley.edu" 
                                 className="footer-email"
                             >
-                                marlatumenjargal@berkeley.edu
+                                 marlatumenjargal@berkeley.edu
                                 <ArrowUpRight className="email-arrow" />
                             </a>
                         </div>
