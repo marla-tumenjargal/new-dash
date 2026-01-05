@@ -11,38 +11,40 @@ export default function Courses() {
   };
 
   return (
-    <div className="courses-page">
-      <div className="courses-container">
-        <div className="courses-header">
-          <div className="courses-row">
-          </div>
-          
-        </div>
-        
-        <div className="courses-columns">
-          <div className="courses-column">
-            <div className="section">
-              
-              <p className="courses-name">spring 2026:</p>
-              <ul>
-                <li><strong>cs70</strong>: discrete math & probability theory</li>
-                <li><strong>cs61b</strong>: data structures </li>
-                <li><strong>data c8</strong>: foundations of data science</li>
-                <li><strong>anthro 2ac</strong>: intro to archaeology</li>
-              </ul>
+    <>
+      <div className="background-video-container">
+        <video autoPlay loop muted playsInline className="background-video">
+          <source src="/flowers.mp4" type="video/mp4" />
+        </video>
+      </div>
 
-              <p className="courses-name">fall 2025:</p>
-              <ul>
-                <li><strong>cs61a</strong>: structure and interpretation of computer programs</li>
-                <li><strong>math 54</strong>: linear algebra & differential equations </li>
-                <li><strong>data 94</strong>: computational thinking & social dynamics</li>
-                <li><strong>comparative literature r1b</strong>: surrealism, thresholds, windows</li>
-              </ul>
+      <div className="courses-page">
+        <div className="courses-container">
+          <div className="courses-content">
+            <div className="semester-section">
+              <p className="coursework-title">coursework</p>
 
+              <p className="semester-title">spring 2026</p>
+              <ul className="courses-list">
+                <li>cs70: discrete math & probability theory</li>
+                <li>cs61b: data structures</li>
+                <li>data c8: foundations of data science</li>
+                <li>anthro 2ac: intro to archaeology</li>
+              </ul>
+            </div>
+
+            <div className="semester-section">
+              <p className="semester-title">fall 2025</p>
+              <ul className="courses-list">
+                <li>cs61a: structure and interpretation of computer programs</li>
+                <li>math 54: linear algebra & differential equations</li>
+                <li>data 94: computational thinking & social dynamics</li>
+                <li>comparative literature r1b: surrealism, thresholds, windows</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

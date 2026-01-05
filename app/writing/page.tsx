@@ -22,7 +22,7 @@ export default function WritingPage() {
       title: "on creativity", 
       author: "design", 
       blocks: "1/4/2026", 
-      images: ['/green.jpg'], 
+      images: ['/rnb2.jpg'], 
       content: `although i don't strongly consider myself a traditionally creative person (such as within the fine arts and music), i do believe that the
 ability to think critically and introspectively runs far beyond silicon valley's insistence on speed, efficiency, and optimization. one such thought involves integrating creativity into computer science. and no, not in a "how can i solve this algorithm to achieve the most efficiency" or "how can i maximize cpu usage here" ways but rather in a "how can i use computer science as a tool to express design creatively?" so my thoughts on creativity are really just about expression. by no means does this mean that we should only focus on creativity when we design because it is equally important we pay attention to user needs. anyway, circling back, my thoughts on creativity are really about expression + balance.  '`
     },
@@ -31,7 +31,7 @@ ability to think critically and introspectively runs far beyond silicon valley's
       title: "is the turing test an appropriate measure of machine intelligence?", 
       author: "technology", 
       blocks: "11/28/2025", 
-      images: ['/green.jpg'], 
+      images: ['/rnb.jpg'], 
       content: `<span style="color: #999;">background info! 
 • turing test - proposed by Alan Turing in 1950; basically says that if a human can't tell the difference between the output of a machine and a human, then that machine has reached "human-level intelligence."
 • strong ai - the idea that ai can generalize beyond specific tasks, so it has a consciousness in theory 
@@ -55,7 +55,7 @@ the chinese room experiment proves that simulation does not equal duplication. a
   title: "does innovation only happen within its context? ",
   author: "philosophy",
   blocks: "9/1/2025",
-  images: ['/blueruf.jpg'],
+  images: ['/greenblue.jpg'],
   content: `recently, i've been interested in a lot of the social dynamics behind computational thinking, such as AGI, internet systems, the turing test, and how recommendation algorithms (especially facebook and their metaverse) are evolving with time. but to understand how we've been able to develop such mind-boggling technologies, we also need to understand binary (aka the computer's language of 0s and 1s). 
 
 so, i ask : does innovation only happen within its context? 
