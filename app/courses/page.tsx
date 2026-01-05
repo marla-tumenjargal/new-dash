@@ -20,7 +20,6 @@ export default function Courses() {
         </div>
         
         <div className="courses-columns">
-          {/* Column 1 */}
           <div className="courses-column">
             <div className="section">
               
