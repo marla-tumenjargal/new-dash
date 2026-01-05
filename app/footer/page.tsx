@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="footer-content">
                     <div className="footer-inner">
                         <div className="footer-left">
-                         talk [cupstacking, sodukus, philosophy/ai/society, etc] with me →
+                         2026 - Marla Tumenjargal →
                         </div>
                         
                         <div className="footer-right">
