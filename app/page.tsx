@@ -88,17 +88,17 @@ export default function HomePage() {
         <div>
         <p><strong>previously:</strong></p>
         <ul className="list-disc list-inside space-y-1 ml-0">
-
         <li>
-              <a href="https://educationusa.state.gov/centers/educationusa-mongolia" target="_blank" rel="noopener noreferrer" className="hover-underline-link">
-                prev @ U.S. Embassy in Mongolia &nbsp;<ArrowUpRight className="email-arrow" />
-              </a>
-            </li>
-            <li>
-              <a href="/research_publication.pdf" className="hover-underline-link">
+              <a href="https://medium.com/@tumearla/researching-bcrypt-for-secure-password-storage-attacks-an-analysis-def2b1e95567" className="hover-underline-link">
                 researching bcrypt for secure password storage&nbsp;<ArrowUpRight className="email-arrow" />
               </a>
             </li>
+        <li>
+              <a href="https://mn.linkedin.com/company/educationusa-mongolia" target="_blank" rel="noopener noreferrer" className="hover-underline-link">
+                prev @ U.S. Embassy in Mongolia &nbsp;<ArrowUpRight className="email-arrow" />
+              </a>
+            </li>
+            
             <li>
               <a href="/projects" className="hover-underline-link">
                 building full-stack iOS for nomadic learners @ IntellectX&nbsp;<ArrowUpRight className="email-arrow" />
