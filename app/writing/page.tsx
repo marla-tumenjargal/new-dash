@@ -19,19 +19,47 @@ export default function WritingPage() {
   const articles: Article[] = [
     { 
       id: 1, 
-      title: "on creativity", 
-      author: "design", 
-      blocks: "1/4/2026", 
+      title: "using a sts lens for fair ml in sociotechnical systems", 
+      author: "human-centered computing", 
+      blocks: "1/15/2026", 
       images: ['/rnb2.jpg'], 
+      content: `
+<span style="color: #888;">preface: everything from this entry is cited + sourced from "fairness and abstraction in sociotechnical systems" (found <a href="https://dl.acm.org/doi/10.1145/3287560.3287598" target="_blank" rel="noopener noreferrer" style="color: #888; text-decoration: underline;">here</a>). i'm simply sharing some of the very very fascinating concepts i learned from the article, so all credit to the the authors (Selbst, Boyd, Friedler, Venkatasubramanan, and Vertesi!)!</span>
+
+as more ml is being increasingly used in sociotechnical systems (e.g, social media, recruiters using auto-resume ml, algorithmic risk assessing for disputing justice cases, etc), more of everything is being abstracted into algorithms. and this abstraction makes sense because it strips away the nuance / ambiguity of data in order to find patterns / the underlying structure. abstraction helps us apply machine learning in a variety of ways + solve more kinds of problems.
+
+that is what makes ml so domain nonspecific, because something in the real world can be squeezed into this “mathlike, abstract world” where real things can be reduced into some optimized input/output. but what if we're trying to abstract something more objective, such as fairness or justice? well, many ml algorithms would js define a fairness metric and try to optimize the model for it. however, we can't treat social systems in the same way we treat the metrics of technical systems (e.g, such as precision or other quantifiable, specific goals). 
+      
+technical systems are designed to optimize clearly defined goals, whereas social + legal systems are value-laden and constantly changing (for example, “fairness” changes over time within a society). when solutions + just generally when these two systems are treated as equals, we get five main problems:
+      
+1. framing - we build a model that judges if something is “fair” but we don’t judge the model itself of whether its output is actually fair.
+      
+2. portability - another reason why ml is versatile is because many solutions can be categorized. for example, a problem can be solved through some classification, clustering, RL, regression algorithm, etc. these algorithms are versatile because they can be applied in many ways and are therefore portable. however, social contexts tend to be very variable and not well modeled by simple inputs or parameters of these algorithms. so the main point here is that even if a model were to capture all the social nuances of a problem, then it isn’t portable anymore because those contexts change with each problem. 
+      
+3. formalism - how do we take a qualitative trait (such as fairness) and convert that into some quantitative input/output? because social and technical fields differ in the nature of the knowledge they use, it’s hard to transfer data between them without losing context. this is for three reasons: 1) procedurality (fairness depends on how decisions are made), 2) contextuality (what counts as fair across many settings), and 3) contestibility (it is not a fact so people have different takes on an idea). i think a common misconception we have is that history is like a set of facts (oh this event happened in 1921 and this army invaded another on xyz date). but those are just facts not history. social fields like history and anthropology all depend on context. this context (aka perspective) in the social sciences is often seen as a “bug” when it is actually a feature of the system. sometimes, the natural sciences can be put on a pedestal because they represent some universal truth (for example, 2+2 is always 4 and that never changes). however, in the social sciences, the nuance and context is part of the field. it is a feature! when we try to convert the "metrics" of the social sciences (aka context + perspective + analysis) into the science metrics, what might be considered “fair” by the algorithm (e.g, it satisfies a formula), is probably not the fairest because the algorithm is inadvertently making some underlying value judgement. 
+      
+4. ripple effect - the mistake of assuming that adding a technical system to a social setting doesn’t change anything. but these systems affect how people behave (like incentives, decisions they make, etc). ml algorithms are not invisible solutions, as they also affect power structure, people, and social values.  
+
+5. solutionism - incorrectly assuming that social problems need tech solutions. 
+      
+as a closing thought, looking at fair ml through this society + tech-focused lens is incredibly valuable because it shows us how sociotechnical systems are cycles (2 way streets!). 
+    
+      `},
+    { 
+      id: 8, 
+      title: "on creativity", 
+      author: "human-centered computing", 
+      blocks: "1/4/2026", 
+      images: ['/rnb.jpg'], 
       content: `although i don't strongly consider myself a traditionally creative person (such as within the fine arts and music), i do believe that the
 ability to think critically and introspectively runs far beyond silicon valley's insistence on speed, efficiency, and optimization. one such thought involves integrating creativity into computer science. and no, not in a "how can i solve this algorithm to achieve the most efficiency" or "how can i maximize cpu usage here" ways but rather in a "how can i use computer science as a tool to express design creatively?" so my thoughts on creativity are really just about expression. by no means does this mean that we should only focus on creativity when we design because it is equally important we pay attention to user needs. anyway, circling back, my thoughts on creativity are really about expression + balance.  '`
     },
     { 
-      id: 2, 
+      id: 3, 
       title: "is the turing test an appropriate measure of machine intelligence?", 
       author: "technology", 
       blocks: "11/28/2025", 
-      images: ['/rnb.jpg'], 
+      images: ['/greenblue.jpg'], 
       content: `<span style="color: #999;">background info! 
 • turing test - proposed by Alan Turing in 1950; basically says that if a human can't tell the difference between the output of a machine and a human, then that machine has reached "human-level intelligence."
 • strong ai - the idea that ai can generalize beyond specific tasks, so it has a consciousness in theory 
@@ -51,11 +79,11 @@ the chinese room experiment proves that simulation does not equal duplication. a
 <span class="highlight">i believe this thought experiment matters a lot more than we realize when it comes to ai alignment and shaping the moral compasses of new systems as well.</span class="highlight"> `
     },
 {
-  id: 3,
+  id: 4,
   title: "does innovation only happen within its context? ",
   author: "philosophy",
   blocks: "9/1/2025",
-  images: ['/greenblue.jpg'],
+  images: ['/rnb2.jpg'],
   content: `recently, i've been interested in a lot of the social dynamics behind computational thinking, such as AGI, internet systems, the turing test, and how recommendation algorithms (especially facebook and their metaverse) are evolving with time. but to understand how we've been able to develop such mind-boggling technologies, we also need to understand binary (aka the computer's language of 0s and 1s). 
 
 so, i ask : does innovation only happen within its context? 
@@ -74,7 +102,7 @@ circling back, innovation isn't bound to any singular context but how well it is
 `
 },
     {
-      id: 4,
+      id: 5,
       title: "on using code as a tool for creativity",
       author: "opinion",
       blocks: "7/13/2025",
@@ -92,7 +120,7 @@ the more i continue to create and learn from others, the more i realize how much
 “human” is an odd way to describe a website’s frontend design, i know i know. but with the rise of ai-assisted coders (you may know them as vibe coderz), most (if not all) chatbots such as claude and chatgpt spit out generic designs that regurgitate all of the patterns it has recognized in its training data. in no way am i an expert on the llm process, <span class="highlight">but there is one thing i know for sure: the ability to think critically and introspectively about new problems is our most important tool to create better more readable code.</span>`
     },
     {
-      id: 5,
+      id: 6,
       title: "on luck",
       author: "opinion",
       blocks: "7/11/2025",
@@ -100,12 +128,19 @@ the more i continue to create and learn from others, the more i realize how much
       content: `<span class="highlight">preparation + opportunity = luck.</span>`
     },
     {
-      id: 6,
-      title: "introductory thoughts",
-      author: "society",
+      id: 7,
+      title: "hallo and welcome :)",
+      author: "intro",
       blocks: "7/15/2025",
       images: ['/rnb2.jpg'],
-      content: `fulfillment isn't something we discover so much as something we create through attention and choice. i like to see it as <span class="highlight">all the people who inspire us, all the ideas that challenge us, the work that engages us, and through the quality of our actions</span>. perhaps this is why there is no universal formula to anything. what draws one person forward might leave another. 
+      content: `
+some fun facts:
+1. i used to have a podcast (codify) for 1.5ish years w/ a good friend of mine, and i enjoyed discussing new tech / femtech / interdiscplinary breakthroughs. so, i ultimately made this journal to jot those thoughts down.
+
+2. i love solving mind puzzles. they're one of my fav hobbies! one of my fondest childhood memories was going to the a "thinking" academy ("oyun academ" in mongolian) every summer in Ulaanbaatar, Mongolia. there i picked up some of my current hobbies (speedstacking, memorization techniques (for example, memorizing a list with 50 random objects in under 2 min or a 30-digit long number in the same time, etc), using your hands as a abacus up to 1000, and rubiks cubes! (ofc the classic 3x3 but also the 2x2 and mirror cubes!!)). 
+
+other random thoughts:
+fulfillment isn't something we discover so much as something we create through attention and choice. i like to see it as <span class="highlight">all the people who inspire us, all the ideas that challenge us, the work that engages us, and through the quality of our actions</span>. perhaps this is why there is no universal formula to anything. what draws one person forward might leave another. 
 `
     }
   ];
