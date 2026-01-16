@@ -19,7 +19,21 @@ export default function WritingPage() {
   const articles: Article[] = [
     { 
       id: 1, 
-      title: "using a sts lens for fair ml in sociotechnical systems", 
+      title: "getting my creative spark back", 
+      author: "tech", 
+      blocks: "1/4/2026", 
+      images: ['/rnb.jpg'], 
+      content: `tbd`},
+    { 
+      id: 2, 
+      title: "wowow mHC and deepseek", 
+      author: "tech", 
+      blocks: "1/4/2026", 
+      images: ['/rnb.jpg'], 
+      content: `tbd`},
+    { 
+      id: 3, 
+      title: "a look into fair ml within sociotechnical systems", 
       author: "human-centered computing", 
       blocks: "1/15/2026", 
       images: ['/rnb2.jpg'], 
@@ -46,7 +60,7 @@ as a closing thought, looking at fair ml through this society + tech-focused len
     
       `},
     { 
-      id: 8, 
+      id: 4, 
       title: "on creativity", 
       author: "human-centered computing", 
       blocks: "1/4/2026", 
@@ -55,7 +69,7 @@ as a closing thought, looking at fair ml through this society + tech-focused len
 ability to think critically and introspectively runs far beyond silicon valley's insistence on speed, efficiency, and optimization. one such thought involves integrating creativity into computer science. and no, not in a "how can i solve this algorithm to achieve the most efficiency" or "how can i maximize cpu usage here" ways but rather in a "how can i use computer science as a tool to express design creatively?" so my thoughts on creativity are really just about expression. by no means does this mean that we should only focus on creativity when we design because it is equally important we pay attention to user needs. anyway, circling back, my thoughts on creativity are really about expression + balance.  '`
     },
     { 
-      id: 3, 
+      id: 5, 
       title: "is the turing test an appropriate measure of machine intelligence?", 
       author: "technology", 
       blocks: "11/28/2025", 
@@ -79,7 +93,7 @@ the chinese room experiment proves that simulation does not equal duplication. a
 <span class="highlight">i believe this thought experiment matters a lot more than we realize when it comes to ai alignment and shaping the moral compasses of new systems as well.</span class="highlight"> `
     },
 {
-  id: 4,
+  id: 6,
   title: "does innovation only happen within its context? ",
   author: "philosophy",
   blocks: "9/1/2025",
@@ -102,7 +116,7 @@ circling back, innovation isn't bound to any singular context but how well it is
 `
 },
     {
-      id: 5,
+      id: 7,
       title: "on using code as a tool for creativity",
       author: "opinion",
       blocks: "7/13/2025",
@@ -120,7 +134,7 @@ the more i continue to create and learn from others, the more i realize how much
 “human” is an odd way to describe a website’s frontend design, i know i know. but with the rise of ai-assisted coders (you may know them as vibe coderz), most (if not all) chatbots such as claude and chatgpt spit out generic designs that regurgitate all of the patterns it has recognized in its training data. in no way am i an expert on the llm process, <span class="highlight">but there is one thing i know for sure: the ability to think critically and introspectively about new problems is our most important tool to create better more readable code.</span>`
     },
     {
-      id: 6,
+      id: 8,
       title: "on luck",
       author: "opinion",
       blocks: "7/11/2025",
@@ -128,7 +142,7 @@ the more i continue to create and learn from others, the more i realize how much
       content: `<span class="highlight">preparation + opportunity = luck.</span>`
     },
     {
-      id: 7,
+      id: 9,
       title: "hallo and welcome :)",
       author: "intro",
       blocks: "7/15/2025",
