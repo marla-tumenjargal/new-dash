@@ -78,7 +78,8 @@ export default function Navbar() {
         </div>
       </div>
 
-      <nav className="hidden md:flex md:flex-col md:items-center md:justify-center md:pt-[8vh] md:space-y-[1vh] md:px-[5%] font-hk">
+      <nav className="hidden md:flex md:flex-col md:items-center md:justify-center md:pt-[8vh] md:space-y-[1vh] md:px-[5%] font-hk relative">
+        
         <div className="flex flex-col space-y-[1vh]">
           {navItems.map((item) => {
             const isActive = pathname === item.href || (pathname === "/" && item.name === "bio");
