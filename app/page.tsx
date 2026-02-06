@@ -76,6 +76,12 @@ export default function HomePage() {
             </li>
 
             <li>
+            doing swe things @ <a href="https://berkeleytime.com/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">
+                berkeleytime
+              </a> 
+            </li>
+
+            <li>
             jotting my thoughts <a href="/writing" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">
                 here
               </a> 

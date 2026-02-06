@@ -32,56 +32,7 @@ export default function ProjectsPage() {
               <span className="projects-year">currently researching + proposal</span>
             </div>
 
-            <div className="projects-main-content">
-              <div className="projects-left-content">
-                <p className="projects-description">
-                  TOBY is the trust layer for e-commerce. With TOBY, make sustainable shopping decisions with confidence. 
-                  toby is product intelligence for online shopping that helps consumers make informed purchasing decisions in an era of niche marketplaces, commoditized 
-                  platforms, and deteriorating product quality.
-                </p>
-                <div style={{ marginTop: '1.5rem' }}>
-                  <p className="projects-description" style={{ marginBottom: '1rem', fontWeight: '500' }}>
-                    why toby?
-                  </p>
-                  <p className="projects-description" style={{ fontSize: '0.95rem', lineHeight: '1.6' }}>
-  1. Quality product analysis<br />
-  2. Personalized shopping recommendations<br />
-  3. Fit prediction<br />
-  <br />
-  we're entering an era where large platforms like Amazon and Shopify are increasingly commoditized, 
-  charging more from sellers and users while product quality declines. customers face fit uncertainty, 
-  high return rates, review pollution from bot-generated content, and decision paralysis from inadequate 
-  filters. sellers compete on price rather than quality because it isn't easily measurable or discoverable.
-</p>
-                  <p className="projects-description" style={{ fontSize: '0.95rem', lineHeight: '1.6', marginTop: '1rem' }}>
-                    toby implements a different approach: multi-modal recommendations based on (1) durability/quality prediction 
-                    through material composition and manufacturing origin analysis, and (2) fit prediction using user measurements. 
-                    unlike traditional AI assistants that parse star ratings and reviews—easily influenced by bots and marketing—toby 
-                    focuses on objective, verifiable product attributes.
-                  </p>
-                </div>
-              </div>
-
-              <div className="projects-details-grid">
-                <div className="projects-detail-section">
-                  <h3 className="projects-detail-title">dimensions</h3>
-                  <p className="projects-detail-content">
-                    Width: sustainability API, ml/ai<br />
-                    Height: e-commerce intelligence<br />
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="projects-image-container">
-            <img
-              src="/toby.png"
-              alt="Toby Project"
-              className="projects-image active"
-            />
-          </div>
-        </div>
+            
 
         {/* Third Project */}
         <div className="projects-item">
@@ -173,6 +124,8 @@ export default function ProjectsPage() {
         </div>
 
       </div>
+    </div>
+    </div>
     </div>
   );
 }
