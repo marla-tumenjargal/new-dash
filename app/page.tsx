@@ -19,7 +19,6 @@ export default function HomePage() {
   }, []);
 
   const handleProjectsClick = useCallback(() => window.location.href = '/projects', []);
-  const handleWritingClick = useCallback(() => window.location.href = '/writing', []);
   const handleCoursesClick = useCallback(() => window.location.href = '/courses', []);
   const handleMouseEnter = () => setIsHovering(true);
   const handleMouseLeave = () => setIsHovering(false);
@@ -65,7 +64,7 @@ export default function HomePage() {
               >
                 these
               </a>{" "}
-              courses :D
+              courses 
             </li>
   
 
@@ -130,31 +129,7 @@ export default function HomePage() {
         </p>
       </div>
 
-      {/* <section className="hero-container mt-10 pl-6">
-        <div className="hero-row">
-          <p>✿ </p>
-          <p>&nbsp; view my work ↓</p>
-        </div>
-
-        <div className="hero-section">
-          <div className="hero-images-container">
-            <div className="hero-image-wrapper" onClick={handleCoursesClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              <img src="/coursework.png" alt="writing folder" className="hero-sample-image original-image" />
-              <img src="/activecoursework.png" alt="active writing folder" className="hero-sample-image active-image" />
-            </div>
-
-            <div className="hero-image-wrapper" onClick={handleProjectsClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              <img src="/projectsfolder.png" alt="projects folder" className="hero-sample-image original-image" />
-              <img src="/activeprojectsfolder.png" alt="active projects folder" className="hero-sample-image active-image" />
-            </div>
-
-            <div className="hero-image-wrapper" onClick={handleWritingClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              <img src="/projectsfolder.png" alt="projects folder" className="hero-sample-image original-image" />
-              <img src="/activeprojectsfolder.png" alt="active projects folder" className="hero-sample-image active-image" />
-            </div>
-          </div>
-        </div>
-      </section> */}
+      
     </>
   );
 }

@@ -25,13 +25,13 @@ export default function HeroFolders({ onMouseEnter, onMouseLeave }: HeroFoldersP
       activeImage: '/activeprojectsfolder.png',
       route: '/projects'
     },
-    {
-      id: 'writing',
-      title: 'writing folder',
-      originalImage: '/writingfolder.png',
-      activeImage: '/activewritingfolder.png',
-      route: '/writing'
-    },
+    // {
+    //   id: 'writing',
+    //   title: 'writing folder',
+    //   originalImage: '/writingfolder.png',
+    //   activeImage: '/activewritingfolder.png',
+    //   route: '/writing'
+    // },
     {
       id: 'courses',
       title: 'coursework folder',
