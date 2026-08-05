@@ -24,16 +24,25 @@ export default function Courses() {
             <div className="semester-section">
               <p className="coursework-title">coursework</p>
 
-              <p className="semester-title">spring 2026</p>
+              <p className="semester-title">fall 2026</p>
               <ul className="courses-list">
-                <li>cs70: discrete math & probability theory</li>
-                <li>cs61b: data structures</li>
-                <li>data c8: foundations of data science</li>
-                <li>anthro 2ac: intro to archaeology</li>
+                <li>cs61c: computer architecture</li>
+                <li>data c100: principles & techniques of data science</li>
+                <li>bioeng 10: biomedicine for engineers</li>
+                <li>french 80: cultural history of paris</li>
               </ul>
             </div>
 
             <div className="semester-section">
+
+              <p className="semester-title">spring 2026</p>
+                <ul className="courses-list">
+                  <li>cs70: discrete math & probability theory</li>
+                  <li>cs61b: data structures</li>
+                  <li>data c8: foundations of data science</li>
+                  <li>anthro 2ac: intro to archaeology</li>
+                </ul>
+
               <p className="semester-title">fall 2025</p>
               <ul className="courses-list">
                 <li>cs61a: structure and interpretation of computer programs</li>

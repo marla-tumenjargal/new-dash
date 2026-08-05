@@ -19,46 +19,54 @@ export default function WritingPage() {
   const articles: Article[] = [
     { 
       id: 1, 
-      title: "getting my creative spark back", 
-      author: "tech", 
-      blocks: "1/4/2026", 
-      images: ['/rnb.jpg'], 
-      content: `tbd`},
-    { 
-      id: 2, 
-      title: "wowow mHC and deepseek", 
-      author: "tech", 
-      blocks: "1/4/2026", 
-      images: ['/rnb.jpg'], 
-      content: `tbd`},
-    { 
-      id: 3, 
       title: "a look into fair ml within sociotechnical systems", 
-      author: "human-centered computing", 
-      blocks: "1/15/2026", 
-      images: ['/rnb2.jpg'], 
-      content: `
-<span style="color: #888;">preface: everything from this entry is cited + sourced from "fairness and abstraction in sociotechnical systems" (found <a href="https://dl.acm.org/doi/10.1145/3287560.3287598" target="_blank" rel="noopener noreferrer" style="color: #888; text-decoration: underline;">here</a>). i'm simply sharing some of the very very fascinating concepts i learned from the article, so all credit to the the authors (Selbst, Boyd, Friedler, Venkatasubramanan, and Vertesi!)!</span>
+      author: "tech", 
+      blocks: "8/4/2026", 
+      images: ['/rnb.jpg'], 
+      content: `preface: everything from this entry is cited + sourced from "fairness and abstraction in sociotechnical systems" (found here). i'm simply sharing some of the very very fascinating concepts i learned from the article, so all credit to the the authors (Selbst, Boyd, Friedler, Venkatasubramanan, and Vertesi!)!
 
 as more ml is being increasingly used in sociotechnical systems (e.g, social media, recruiters using auto-resume ml, algorithmic risk assessing for disputing justice cases, etc), more of everything is being abstracted into algorithms. and this abstraction makes sense because it strips away the nuance / ambiguity of data in order to find patterns / the underlying structure. abstraction helps us apply machine learning in a variety of ways + solve more kinds of problems.
-
+      
 that is what makes ml so domain nonspecific, because something in the real world can be squeezed into this “mathlike, abstract world” where real things can be reduced into some optimized input/output. but what if we're trying to abstract something more objective, such as fairness or justice? well, many ml algorithms would js define a fairness metric and try to optimize the model for it. however, we can't treat social systems in the same way we treat the metrics of technical systems (e.g, such as precision or other quantifiable, specific goals). 
-      
+            
 technical systems are designed to optimize clearly defined goals, whereas social + legal systems are value-laden and constantly changing (for example, “fairness” changes over time within a society). when solutions + just generally when these two systems are treated as equals, we get five main problems:
-      
+            
 1. framing - we build a model that judges if something is “fair” but we don’t judge the model itself of whether its output is actually fair.
-      
+            
 2. portability - another reason why ml is versatile is because many solutions can be categorized. for example, a problem can be solved through some classification, clustering, RL, regression algorithm, etc. these algorithms are versatile because they can be applied in many ways and are therefore portable. however, social contexts tend to be very variable and not well modeled by simple inputs or parameters of these algorithms. so the main point here is that even if a model were to capture all the social nuances of a problem, then it isn’t portable anymore because those contexts change with each problem. 
-      
+            
 3. formalism - how do we take a qualitative trait (such as fairness) and convert that into some quantitative input/output? because social and technical fields differ in the nature of the knowledge they use, it’s hard to transfer data between them without losing context. this is for three reasons: 1) procedurality (fairness depends on how decisions are made), 2) contextuality (what counts as fair across many settings), and 3) contestibility (it is not a fact so people have different takes on an idea). i think a common misconception we have is that history is like a set of facts (oh this event happened in 1921 and this army invaded another on xyz date). but those are just facts not history. social fields like history and anthropology all depend on context. this context (aka perspective) in the social sciences is often seen as a “bug” when it is actually a feature of the system. sometimes, the natural sciences can be put on a pedestal because they represent some universal truth (for example, 2+2 is always 4 and that never changes). however, in the social sciences, the nuance and context is part of the field. it is a feature! when we try to convert the "metrics" of the social sciences (aka context + perspective + analysis) into the science metrics, what might be considered “fair” by the algorithm (e.g, it satisfies a formula), is probably not the fairest because the algorithm is inadvertently making some underlying value judgement. 
-      
+            
 4. ripple effect - the mistake of assuming that adding a technical system to a social setting doesn’t change anything. but these systems affect how people behave (like incentives, decisions they make, etc). ml algorithms are not invisible solutions, as they also affect power structure, people, and social values.  
-
-5. solutionism - incorrectly assuming that social problems need tech solutions. 
       
-as a closing thought, looking at fair ml through this society + tech-focused lens is incredibly valuable because it shows us how sociotechnical systems are cycles (2 way streets!). 
-    
+5. solutionism - incorrectly assuming that social problems need tech solutions. 
+            
+as a closing thought, looking at fair ml through this society + tech-focused lens is incredibly valuable because it shows us how sociotechnical systems are cycles (2 way streets!). `},
+
+    { 
+      id: 2, 
+      title: "life is not that serious & sonder", 
+      author: "general", 
+      blocks: "7/30/2026", 
+      images: ['/greenblue.jpg'], 
+      content: `these past few months, i traveled through japan, mongolia, and ulan-ude (southern siberia). three very different places. yet out of the three, ulan-ude was the most different than what i had expected. for a lot of my life, i saw russia through this hyperfixated lens that the media had portrayed to me -- war, death, inhumane violence, communism. this is a country with a complicated history, one that still condones acts of violence i do not and will not stand behind. that hasn't changed. yet during my time there, i felt like i was pulling away this red-stained curtain to see something new and refreshing. 
+
+i only went to the cities closest to the mongolian border, in the pribaikalsky district, and to lake baikal itself. i met buryats and mongolians, saw some french backpackers in our hostel, and restaurant owners pumping out bowls of borsch. i saw faces that were tired but hopeful and resilient. this is all described by John Koenig in his novel the “Dictionary of Obscure Sorrows” where he defines sonder. it feels odd to condense such a grand feeling into a single word, but its main definition goes along the lines that every one of these people have their own backstory that is just as complex as our own. that realization has put less seriousness into my life. that, at the end of the day, my worldview has shifted most when i am actively increasing exposure of new experiences into my life. but i believe the most important contributor to broadening our perspectives is how we implement those beliefs into actions. for instance, its easy to say “oh, this person has good morals” when those morals haven’t been put to the test. the same principle goes for perspectives because you only know what you believe in when you have to make a decision. at such young ages in our late 18s and 20s, our minds are playdoh. as eileen gu says, “we have neuroplasticity on our side.” it is not too late to form new ideas and beliefs about what success looks like, about balance and relationships and our routine.
+      
+* my writing is rusty, hope the messages goes through well. open to feedback!
+      
       `},
+      
+    { 
+        id: 3, 
+        title: "random thought no.1", 
+        author: "etc", 
+        blocks: "7/17/2026", 
+        images: ['/rnb2.jpg'], 
+        content: `location: lake baikal, time: around sunset
+
+i remember sitting before baikal, in awe, trying to capture a 180-degree view through my tiny iphone camera. for context, i make LOTS of photo albums in my phone and on Pinterest for different times in my life (rip storage), such as little libraries of colors or detail shots. this was no exception. but this little hobby of mine got me thinking about creativity. it's quite strange? it's something uniquely human, this ability to go inside the manifolds of our own minds and pull out something new from nothing more than the seed of an idea. i like to see creativity as more of a bridge between an idea and its execution. like any process, however, this is very much a muscle that needs to be trained and built over time. 
+        `},
     { 
       id: 4, 
       title: "on creativity", 

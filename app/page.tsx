@@ -44,80 +44,70 @@ export default function HomePage() {
 
       <div className="text-sm leading-relaxed space-y-4 pl-4 pt-10 font-footer max-w-[650px] mx-auto">
 
-        <p className="hero-name">Marla Tumenjargal</p>
+        <p className="hero-name">Hey, I'm Marla!</p>
 
         <p>
-          hey there, i currenty study computer science @ UC Berkeley and enjoy all-things machine learning and design. particularly interested in building creative software to address sociotechnical problems.
-          talk [cupstacking, philosophy/math, pinterest-ing, etc] with me! <a href=""></a>
+          I'm an undergraduate @ UC Berkeley studying computer science. I'm passionate about all-things machine learning, software dev, and creative tech. 
+          At the moment, I'm building Wisp and overseeing operations at Launchpad. 🚀 <a href=""></a>
           
         </p>
       
         <div>
-          <p><strong>what i'm up to:</strong></p>
+          <p><strong>Experience:</strong></p>
           <ul className="list-disc list-inside space-y-1 ml-0">
           
-            <li>taking <a
-                href="/courses"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:no-underline"
-              >
-                these
-              </a>{" "}
-              courses 
-            </li>
-  
-
+            <li>building wisp (AI-powered creative discovery)</li>
 
             <li>
-            building with creative ml & ai @ <a href="https://www.callaunchpad.org/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">
-                launchpad
+            machine learning engineer @ <a href="https://www.callaunchpad.org/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">
+                Launchpad
               </a> 
             </li>
 
-            {/* <li>
-            doing swe things @ <a href="https://berkeleytime.com/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">
-                berkeleytime
-              </a> 
-            </li> */}
-
             <li>
-             building new features @ <a href="https://berkeleytime.com/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">
-                berkeleytime
+             full-stack software developer @ <a href="https://berkeleytime.com/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">
+                Berkeleytime
               </a> 
             </li>
             
+  
+
             
           </ul>
         </div>
 
         <div>
-        <p><strong>previously:</strong></p>
+        <p><strong>Previously:</strong></p>
         <ul className="list-disc list-inside space-y-1 ml-0">
-        <li>
-              <a href="https://medium.com/@tumearla/researching-bcrypt-for-secure-password-storage-attacks-an-analysis-def2b1e95567" className="hover-underline-link">
-                researching bcrypt for secure password storage&nbsp;<ArrowUpRight className="email-arrow" />
-              </a>
-            </li>
-        <li>
+
+            <li>
               <a href="https://mn.linkedin.com/company/educationusa-mongolia" target="_blank" rel="noopener noreferrer" className="hover-underline-link">
-                prev @ U.S. Embassy in Mongolia &nbsp;<ArrowUpRight className="email-arrow" />
+                data analytics intern @ U.S. Embassy in Mongolia &nbsp;<ArrowUpRight className="email-arrow" />
               </a>
             </li>
             
             <li>
               <a href="/projects" className="hover-underline-link">
-                building full-stack iOS for nomadic learners @ IntellectX&nbsp;<ArrowUpRight className="email-arrow" />
+                mobile development intern @ Yeti Education &nbsp;<ArrowUpRight className="email-arrow" />
               </a>
             </li>
+
+
             <li>
-              <a href="https://www.linkedin.com/company/mission-math-utah/" target="_blank" rel="noopener noreferrer" className="hover-underline-link">
-                raising $17k for competition math @ Mission Math Utah&nbsp;<ArrowUpRight className="email-arrow" />
-              </a>
+                  <a href="https://medium.com/@tumearla/researching-bcrypt-for-secure-password-storage-attacks-an-analysis-def2b1e95567" className="hover-underline-link">
+                    researcher for bcrypt & secure password storage&nbsp;<ArrowUpRight className="email-arrow" />
+                  </a>
             </li>
+            
             <li>
               <a href="https://www.instagram.com/stembridge.inc/" target="_blank" rel="noopener noreferrer" className="hover-underline-link">
-                scaling AI/CS education for 3k+ girls @ stembridgeinc&nbsp;<ArrowUpRight className="email-arrow" />
+                founder @ stembridgeinc (scaling AI/CS education for 3k+ girls) &nbsp;<ArrowUpRight className="email-arrow" />
+              </a>
+            </li>
+
+            <li>
+              <a href="linkedin.com/company/mission-math-utah" target="_blank" rel="noopener noreferrer" className="hover-underline-link">
+                president @ mmu (raising $17k for competition math) &nbsp;<ArrowUpRight className="email-arrow" />
               </a>
             </li>
         </ul>
@@ -125,11 +115,9 @@ export default function HomePage() {
 
         </div>
         <p className="text-xs font-light tracking-wide text-gray-500 mb-2">
-          ⟢ my tech stack includes React, Node.js, Swift, Java, MongoDB, Python
+          ⟢ formal resume available by request 
         </p>
       </div>
-
-      
     </>
   );
 }

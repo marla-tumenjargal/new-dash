@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
+.design-page {
+  font-family: 'Public Sans', sans-serif;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+  max-width: 1400px;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #ffffff !important;
+}
+
+/* Back Button */
+.design-back-button {
+  background: none;
+  border: none;
+  color: #111827;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0.5rem;
+  margin: 0 0 1rem 0;
+  border-radius: 6px;
+  transition: color 0.2s ease;
+}
+
+.design-back-button:hover {
+  color: #4f46e5;
+}
+
+.design-page-title {
+  font-size: 2.25rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  color: #111827;
+  margin: 0 0 2.5rem 0;
+}
+
+/* Two-column layout, full width: wide column for horizontal
+   posters, narrow column for vertical posters */
+.design-main-container {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.design-column {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+}
+
+.design-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+/* Caption sits above the poster */
+.design-caption-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.design-title {
+  font-size: 1.375rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  color: #111827;
+  margin: 0;
+}
+
+.design-year {
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.design-description {
+  font-size: 15px;
+  color: #374151;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0;
+}
+
+/* Image containers — thin gray border, no cropping */
+.design-image-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.design-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Horizontal posters: 29.7 x 21 cm (A-series landscape ratio) */
+.design-column-wide .design-image {
+  aspect-ratio: 297 / 210;
+  object-fit: contain;
+}
+
+/* Vertical posters: 18 x 24 in (3:4 ratio) */
+.design-column-narrow .design-image {
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+  .design-page {
+    margin: 1.5rem 1rem 0;
+  }
+
+  .design-main-container {
+    gap: 2rem;
+  }
+
+  .design-title {
+    font-size: 1.25rem;
+  }
+
+  .design-page-title {
+    font-size: 1.875rem;
+  }
+}
+
+/* Below this, verticals no longer sit comfortably beside
+   horizontals — stack into a single column, horizontals first */
+@media (max-width: 900px) {
+  .design-main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .design-column {
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .design-page {
+    margin: 1rem 0.75rem 0;
+  }
+
+  .design-title {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .design-page {
+    margin: 1rem 0.5rem 0;
+  }
+
+  .design-column {
+    gap: 2rem;
+  }
+
+  .design-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .design-page {
+    margin: 0.75rem 0.25rem 0;
+  }
+
+  .design-title {
+    font-size: 1.0625rem;
+  }
+
+  .design-year {
+    font-size: 12px;
+  }
+
+  .design-description {
+    font-size: 13.5px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 320px) {
+  .design-page {
+    margin: 0.5rem 0.125rem 0;
+  }
+
+  .design-title {
+    font-size: 1rem;
+  }
+
+  .design-description {
+    font-size: 13px;
+  }
+}

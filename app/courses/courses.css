@@ -62,6 +62,13 @@
     text-transform: lowercase;
 }
 
+/* When a semester title follows another semester's course list
+   within the same section, give it the same breathing room as
+   the gap between separate sections (2rem) */
+.courses-list + .semester-title {
+    margin-top: 2rem;
+}
+
 .courses-list {
     list-style: none;
     padding: 0;

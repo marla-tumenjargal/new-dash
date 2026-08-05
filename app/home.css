@@ -23,7 +23,7 @@ body, p, li, a, span, strong, h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-name {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 400;
   font-family: 'Public Sans', sans-serif;
   color: #111827;
@@ -654,7 +654,7 @@ body, p, li, a, span, strong, h1, h2, h3, h4, h5, h6 {
   }
 
   .hero-name {
-    font-size: 0.9rem !important;
+    font-size: 1.3rem !important;
   }
 
   ul.list-disc.list-inside {

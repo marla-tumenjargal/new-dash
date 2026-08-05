@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const navItems = [
-  { name: "bio", href: "/" },
+  { name: "home", href: "/" },
 ];
 
 const externalLinks = [

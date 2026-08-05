@@ -21,18 +21,27 @@ export default function ProjectsPage() {
 
   return (
     <div className="projects-page">
+      <button className="projects-back-button" onClick={handleBackClick}>
+        ← back
+      </button>
+
+      <h1 className="projects-page-title">Projects</h1>
+      <p className="projects-page-description">
+        Integrity and connection are incredibly important to me and is the backbone to all of my work.
+      </p>
+
       <div className="projects-main-container">
-        
+
         {/* Second Project */}
         <div className="projects-item" style={{ marginBottom: '8rem' }}>
           <div className="projects-content">
             <div className="projects-header">
               <img src="/toby-logo.png" alt="Toby Logo" className="projects-logo" />
-              <h2 className="projects-title">Toby</h2>
-              <span className="projects-year">currently researching + proposal</span>
+              <h2 className="projects-title">Wisp</h2>
+              <span className="projects-year">come check it out sept 2026 :3</span>
             </div>
 
-            
+
 
         {/* Third Project */}
         <div className="projects-item">
@@ -46,11 +55,11 @@ export default function ProjectsPage() {
             <div className="projects-main-content">
               <div className="projects-left-contentf">
                 <p className="projects-description">
-                  a take-home project for YC-backed startup Orchids final interview. when given a URL, application uses a FastAPI + Playwright Chromium  + Anthropic's Claude 3.5 to reconstruct the website's HTML and content. 
+                  a take-home project for YC-backed startup Orchids. when given a URL, application uses a FastAPI + Playwright Chromium  + Anthropic's Claude 3.5 to reconstruct the website's HTML and content.
                 </p>
-                <a 
-                  href="https://github.com/marla-tumenjargal/orchids-ai-website-cloner" 
-                  target="_blank" 
+                <a
+                  href="https://github.com/marla-tumenjargal/orchids-ai-website-cloner"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="source-code-link"
                 >
