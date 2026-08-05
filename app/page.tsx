@@ -48,7 +48,7 @@ export default function HomePage() {
 
         <p>
           I'm an undergraduate @ UC Berkeley studying computer science, passionate about all-things machine learning, software dev, and creative tech. 
-          At the moment, I'm building Wisp and overseeing operations at Launchpad. 🚀 <a href=""></a>
+           <a href=""></a>
           
         </p>
       
