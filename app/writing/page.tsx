@@ -162,6 +162,11 @@ some fun facts:
 
 2. i love solving mind puzzles. they're one of my fav hobbies! one of my fondest childhood memories was going to the a "thinking" academy ("oyun academ" in mongolian) every summer in Ulaanbaatar, Mongolia. there i picked up some of my current hobbies (speedstacking, memorization techniques (for example, memorizing a list with 50 random objects in under 2 min or a 30-digit long number in the same time, etc), using your hands as a abacus up to 1000, and rubiks cubes (ofc the classic 3x3 but also the 2x2 and mirror cubes)). 
 
+3. curr favs (updated august 2026)
+films/movies: the matrix trilogy, spirited away, coraline
+music albums: petal - ariana grande, still over it - summer walker
+sidequests: piano (currently learning the jazz piece pastel by errol garner & chopin no. 1), choreography, bouldering, yapping over coffee
+
 other random thoughts:
 fulfillment isn't something we discover so much as something we create through attention and choice. i like to see it as <span class="highlight">all the people who inspire us, all the ideas that challenge us, the work that engages us, and through the quality of our actions</span>. perhaps this is why there is no universal formula to anything. what draws one person forward might leave another. 
 `
