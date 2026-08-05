@@ -106,7 +106,7 @@ export default function HomePage() {
             </li>
 
             <li>
-              <a href="linkedin.com/company/mission-math-utah" target="_blank" rel="noopener noreferrer" className="hover-underline-link">
+              <a href="https://linkedin.com/company/mission-math-utah" target="_blank" rel="noopener noreferrer" className="hover-underline-link">
                 president @ mmu (raising $17k for competition math) &nbsp;<ArrowUpRight className="email-arrow" />
               </a>
             </li>
