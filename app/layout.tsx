@@ -8,6 +8,7 @@ import Footer from './footer/page';
 import HeroFolders from './HeroFolders';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
+import { Analytics } from '@vercel/analytics/next';
 
 const hankenGrotesk = Hanken_Grotesk({
   weight: ['400', '500', '700'],
@@ -107,6 +108,7 @@ export default function RootLayout({
         )}
 
         {showNavigation && <div className="pt-8"><Footer /></div>}
+        <Analytics />
       </body>
     </html>
   );
