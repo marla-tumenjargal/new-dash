@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="footer-content">
                     <div className="footer-inner">
                         <div className="footer-left">
-                         2026 - Marla Tumenjargal →
+                         last updated: august 5th, 2026 →
                         </div>
                         
                         <div className="footer-right">
