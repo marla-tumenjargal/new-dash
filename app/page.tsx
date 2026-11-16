@@ -56,7 +56,7 @@ export default function HomePage() {
           <p><strong>Experience:</strong></p>
           <ul className="list-disc list-inside space-y-1 ml-0">
           
-            <li>building wisp (AI-powered creative discovery)</li>
+            <li>incoming swe @ wells fargo</li>
 
             <li>
             machine learning engineer @ <a href="https://www.callaunchpad.org/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">

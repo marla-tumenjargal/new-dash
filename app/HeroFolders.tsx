@@ -18,34 +18,12 @@ interface FolderItem {
 export default function HeroFolders({ onMouseEnter, onMouseLeave }: HeroFoldersProps) {
   const folders: FolderItem[] = [
     {
-      id: 'design',
-      title: 'design folder',
-      originalImage: '/design.png',
-      activeImage: '/design-active.png',
-      route: '/design'
-    },
-    {
-      id: 'projects',
-      title: 'projects folder',
-      originalImage: '/projectsfolder.png',
-      activeImage: '/activeprojectsfolder.png',
-      route: '/projects'
-    },
-    {
       id: 'courses',
       title: 'coursework folder',
       originalImage: '/coursework.png',
       activeImage: '/activecoursework.png',
       route: '/courses'
     },
-    {
-      id: 'writing',
-      title: 'writing folder',
-      originalImage: '/writingfolder.png',
-      activeImage: '/activewritingfolder.png',
-      route: '/writing'
-    },
-    
   ];
 
   const handleFolderClick = useCallback((route: string) => {
